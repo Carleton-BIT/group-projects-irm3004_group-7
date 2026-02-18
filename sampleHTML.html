@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Services Directory</title>
+  <link rel="stylesheet" href="stylesHomePage.css">
+</head>
+
+<body>
+  <header>
+    <h1>Student Services</h1> <!--could maybe add a logo here, ask abyan-->
+  </header>
+
+  <main class="generalContainer">
+    <section class="services">
+      <div class="servicesSearchContainer">
+        <input type="text" id="searchInput" placeholder="Search For Student Services..."> <!--takes input, will work with the search algo in js file-->
+      </div>
+
+      <div class="servicesDropdown"> <!--all services and sub services are under the dropdown-->
+  <button class="servicesDropdownBtn">Academics</button>
+  <div class="servicesDropdownContent">
+    <a href="#">Academic Advising</a>
+    <a href="#">Ombuds Service</a>
+    <a href="#">Center for Students</a>
+    <div class="subServicesDropdown">
+      <button class="subServicesDropdownBtn">Services by Degree</button>
+      <div class="subServicesDropdownContent">
+        <a href="#">Sprott School of Business - Academic Advising</a>
+        <a href="#">Faculty of Engineering and Design - Undergraduate Advisors</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="servicesDropdown">
+        <button class="servicesDropdownBtn">Health and Wellness Services</button>
+        <div class="servicesDropdownContent">
+          <a href="#">Health Clinic Services</a>
+          <a href="#">Counselling Services</a>
+          <a href="#">Accessibility Services</a>
+        </div>
+      </div>
+
+      <div class="servicesDropdown">
+        <button class="servicesDropdownBtn">Student Centers</button>
+        <div class="servicesDropdownContent">
+          <a href="#">Ojigkwanong Indigenous Student Centre</a>
+          <a href="#">Global Opportunities & International Student Services Office</a>
+        </div>
+      </div>
+<!--will add more dropdowns once the list of services is final-->
+    </section>
+
+  <footer>
+    <p>Carleton University Student Services</p>
+  </footer>
+
+  <script src="scriptHomePage.js"></script>
+</body>
+</html>
