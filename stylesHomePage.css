@@ -1,0 +1,137 @@
+body
+{
+  font-family: "Helvetica Now", sans-serif; /*carleton font*/
+  background: white;
+}
+
+
+header
+{
+  background: #e91c24; /*carleton red (but it doesn't look very pretty to me)*/
+  color: white;
+  padding: 20px;
+}
+
+
+.servicesSearchContainer
+{
+  margin-bottom: 20px;
+}
+
+#searchInput
+{
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.generalContainer
+{
+  display: flex;
+  padding: 20px;
+}
+
+.services
+{
+  flex: 3;
+  margin-right: 20px;
+}
+
+.mapBox /*more details once the map thing is final*/
+{
+  flex: 1; /*do we want to change how much space the map box and services list take on the page?*/
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+.mapEmbed /*more details once the map thing is final*/
+{
+  background: white;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.servicesDropdown
+{
+  margin-bottom: 15px;
+}
+.servicesDropdownBtn
+{
+  width: 100%;
+  padding: 12px;
+  background: #e91c24;
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.servicesDropdownBtn:hover
+{
+  background: darkred;
+}
+
+.servicesDropdownContent
+{
+  display: none;
+  background: white;
+  border: 1px;
+  border-radius: 4px;
+  padding: 10px;
+}
+.servicesDropdownContent a
+{
+  display: block;
+  padding: 8px 0;
+  color: black;
+  text-decoration: none;
+}
+.servicesDropdownContent a:hover
+{
+  text-decoration: underline;
+}
+
+.subServicesDropdown
+{
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.subServicesDropdownBtn
+{
+  width: 100%;
+  padding: 8px;
+  background: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.subServicesDropdownBtn:hover
+{
+  background: white;
+}
+
+.subServicesDropdownContent
+{
+  display: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.subServicesDropdownContent a
+{
+  display: block;
+  padding: 6px 0;
+}
+
+
+footer /*place footer better*/
+{
+  background: #e91c24;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
