@@ -11,7 +11,7 @@ ITEM_TYPES = [
     ('printer', 'Printer'),
     ('bathroom', 'Bathroom'),
     ('microwave', 'Microwave'),
-    ('Parking Lot', 'parking lot'),
+    ('Parking Lot', 'parking lot'),3
 ]
 
 class MapItem(models.Model):
