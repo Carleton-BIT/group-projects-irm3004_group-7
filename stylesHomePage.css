@@ -7,7 +7,7 @@ body
 
 header
 {
-  background: #e91c24; /*carleton red (but it doesn't look very pretty to me)*/
+  background: #e91c24; /*carleton red?*/
   color: white;
   padding: 20px;
 }
@@ -92,7 +92,7 @@ header
 {
   text-decoration: underline;
 }
-
+/*
 .subServicesDropdown
 {
   margin-left: 15px;
@@ -125,7 +125,7 @@ header
   display: block;
   padding: 6px 0;
 }
-
+*/
 
 footer /*place footer better*/
 {
