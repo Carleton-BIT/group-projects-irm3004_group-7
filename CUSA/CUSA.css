@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+/* HEADER */
+.top-header {
+    width: 100%;
+    background-color: #1f2024;
+}
+
+
+.nav-bar {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f2f2f2;
+    padding: 0 48px;
+    font-size: 18px;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+    white-space: nowrap;
+}
+
+.red-line {
+    width: 100%;
+    height: 5px;
+    background-color: #d71920;
+}
+
+/* PAGE */
+.page-container {
+    width: 78%;
+    max-width: 1100px;
+    margin: 24px auto 0 auto;
+}
+
+.back-link {
+    margin-bottom: 24px;
+    margin-left: 6px;
+}
+
+.back-link a {
+    color: #3c63b8;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.hero-text {
+    width: 60%;
+}
+
+.hero-text h1 {
+    font-size: 66px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 18px;
+    line-height: 1.05;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.45;
+    max-width: 620px;
+}
+
+.hero-search {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 18px;
+}
+
+.search-box {
+    width: 390px;
+    border: 3px solid #111;
+    border-radius: 40px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.search-box i {
+    font-size: 24px;
+}
+
+/* DIVIDERS */
+.divider {
+    border: none;
+    border-top: 2px solid #d7d7d7;
+    margin: 26px 0 50px 0;
+}
+
+.small-divider {
+    border: none;
+    border-top: 2px solid #d7d7d7;
+    margin: 18px 0 12px 0;
+    width: 68%;
+}
+
+.info-block,
+.deadline-section {
+    width: 68%;
+}
+
+.info-block h2 {
+    font-size: 32px;
+    color: #5a0007;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.info-block a {
+    font-size: 16px;
+    color: #d62828;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.info-block a:hover {
+    text-decoration: underline;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-row span {
+    font-size: 14px;
+    color: #111;
+}
+
+/* LAST SECTION */
+.deadline-section {
+    width: 66%;
+    margin-top: 28px;
+    margin-bottom: 72px;
+}
+
+.deadline-title-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.mini-red-line {
+    width: 42px;
+    height: 3px;
+    background-color: #d62828;
+}
+
+.deadline-section h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.deadline-section ul {
+    margin-left: 24px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.note {
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1f2024;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 48px 20px 52px 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 70px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;   /* keep this */
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+.title-row img {
+    width: 150px;
+    height: auto;
+    display: block;
+    transform: translateY(10px); /* 🔥 THIS is the fix */
+}
+
+.title-row h1 {
+    font-size: 72px;   /* bigger like the design */
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
