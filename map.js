@@ -22,11 +22,38 @@
           let second_layer;
           const layer_2 = [second_layer];
 
-          x = generateObject("object_5", 300, 300, "This is the contents",layer_2);
-          y = generateObject("object_5", 350, 300, "This is the new contents",layer_2);
+          x = generateObject("object_5", 300, 300, "This is the CUSA",layer_2);
+          y = generateObject("object_6", 350, 300, "This is the new contents",layer_2);
           generateLayer(layer_2);
           addToLayer(x, layer_2);
           addToLayer(y, layer_2);
+
+          let third_layer;
+          const layer_3 = [third_layer];
+
+          x = generateObject("object_7", 400, 300, "This is the contents",layer_3);
+          y = generateObject("object_8", 450, 300, "This is the new contents",layer_3);
+          generateLayer(layer_3);
+          addToLayer(x, layer_3);
+          addToLayer(y, layer_3);
+
+          let fourth_layer;
+          const layer_4 = [fourth_layer];
+
+          x = generateObject("object_9", 500, 300, "This is the contents",layer_4);
+          y = generateObject("object_10", 550, 300, "This is the new contents",layer_4);
+          generateLayer(layer_4);
+          addToLayer(x, layer_4);
+          addToLayer(y, layer_4);
+
+          let fifth_layer;
+          const layer_5 = [fifth_layer];
+
+          x = generateObject("object_11", 600, 300, "This is the contents",layer_5);
+          y = generateObject("object_12", 650, 300, "This is the new contents",layer_5);
+          generateLayer(layer_5);
+          addToLayer(x, layer_5);
+          addToLayer(y, layer_5);
 
           function generateLayer(obj){
               obj[0] = L.layerGroup([]);
