@@ -2,14 +2,17 @@ body
 {
   font-family: "Helvetica Now", sans-serif; /*carleton font*/
   background: white;
+  margin: 0px;
 }
-
+/* #e91c24 carleton red?*/
 
 header
 {
-  background: #e91c24; /*carleton red?*/
+  background: #333333;
+  border-bottom:4px solid #c8102e;
   color: white;
   padding: 20px;
+  margin-bottom: 0px;
 }
 
 
@@ -60,9 +63,8 @@ header
 {
   width: 100%;
   padding: 12px;
-  background: #e91c24;
   color: white;
-  border: none;
+  background: #333333;
   text-align: left;
   font-size: 16px;
   cursor: pointer;
@@ -129,9 +131,10 @@ header
 
 footer /*place footer better*/
 {
-  background: #e91c24;
+  background: #333333;
+  border-bottom:4px solid #c8102e;
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: 80px;
 }
