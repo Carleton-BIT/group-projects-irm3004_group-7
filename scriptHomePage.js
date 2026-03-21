@@ -2,7 +2,7 @@ var btns = document.querySelectorAll(".servicesDropdownBtn");
 
 for (var i = 0; i < btns.length; i++)
 {
-  btns[i].addEventListener("click", function ()
+  btns[i].addEventListener("click", function()
   {
     var dropdownContent = this.nextElementSibling;
 
@@ -13,13 +13,14 @@ for (var i = 0; i < btns.length; i++)
     else
     {
       dropdownContent.style.display = "block";
+
     }
   });
 }
 
 var searchInput = document.getElementById("searchInput");
 searchInput.addEventListener
-("keyup", function ()
+("keyup", function ()//user types key in search bar
 {
   var filter = searchInput.value.toLowerCase();
   var servicesLinks = document.querySelectorAll(".servicesDropdownContent a");
@@ -28,7 +29,7 @@ searchInput.addEventListener
   {
     var textInput = servicesLinks[i].textContent.toLowerCase();
 
-    if (textInput.indexOf(filter) > -1)
+    if  (textInput.indexOf(filter) > -1)
     {
       servicesLinks[i].style.display = "block";
     }
@@ -39,3 +40,4 @@ searchInput.addEventListener
   }
 }
 );
+//do we want to do like, when one service bar drops down, the other one closes
