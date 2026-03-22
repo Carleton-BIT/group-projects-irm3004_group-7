@@ -68,3 +68,72 @@ footer {
     color: #666;
     padding: 28px;
 }
+
+
+.navBar
+{
+    background: #333333;
+    border-bottom:4px solid #c8102e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navMenu
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navMenu > li > a,
+.dropbtn
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown
+{
+    position: relative;
+    left: 350px;
+}
+
+.dropdownServices
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 260px;
+    padding: 0;
+    z-index: 1000;
+}
+
+.dropdownServices li
+{
+    list-style: none;
+    text-align: center;
+}
+
+.dropdownServices a
+{
+    color: black;
+    padding: 10px 14px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdownServices a:hover
+{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdownServices
+{
+    display: block;
+}
