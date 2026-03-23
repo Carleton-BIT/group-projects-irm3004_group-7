@@ -18,6 +18,24 @@
       button {
           background-color: rgba(192,192,192,1);
       }
+      .mapButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    max-width: 498px;
+}
+
+.mapButtons button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
     </style>
   <link rel="icon" type="image/png" href="Academic-Support-Logo.png">
 </head>
@@ -106,17 +124,20 @@
 <!--will add more dropdowns once the list of services is final-->
     </section>
 
-    <aside class="mapBox">
-        <div class="mapEmbed" id="map"></div>
-      <script src="map.js"></script>
+     <aside class="mapBox" style="background-color: #333333">
+    <div class="mapEmbed" id="map"></div>
+    <script src="map.js"></script>
 
+    <h3 class="mapBox">Service Finder</h3>
 
-      <button id="b1" onclick="addRemove(layer_1,'b1')" style="background-color: red; color: white;">Academics</button>
-     <button id="b2" onclick="addRemove(layer_2,'b2')" style="background-color: dodgerblue; color: white;">CUSA</button>
-     <button id="b3" onclick="addRemove(layer_3,'b3')" style="background-color: gold;">Health and Wellness Services</button>
-     <button id="b4" onclick="addRemove(layer_4,'b4')" style="background-color: violet;">Financial</button>
-     <button id="b5" onclick="addRemove(layer_5,'b5')" style="background-color: green; color: white;">Student Centers</button>
-  </aside>
+    <div class="mapButtons">
+        <button id="b1" onclick="addRemove(layer_1,'b1')" style="background-color: red; color: white;">Academics</button>
+        <button id="b2" onclick="addRemove(layer_2,'b2')" style="background-color: dodgerblue; color: white;">CUSA</button>
+        <button id="b3" onclick="addRemove(layer_3,'b3')" style="background-color: gold;">Health and Wellness Services</button>
+        <button id="b4" onclick="addRemove(layer_4,'b4')" style="background-color: violet;">Financial</button>
+        <button id="b5" onclick="addRemove(layer_5,'b5')" style="background-color: green; color: white;">Student Centers</button>
+    </div>
+</aside>
 </main>
 
   <footer>
