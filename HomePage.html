@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> <!--don't really need to add lang="en" but afaik it makes our page more accessible, could be a talking point in the report/presentation-->
 <head>
+  <meta charset="UTF-8">
   <title>Carleton Student Services Directory</title>
   <link rel="stylesheet" href="stylesHomePage.css">
   <link
@@ -19,6 +20,7 @@
           background-color: rgba(192,192,192,1);
       }
     </style>
+  <link rel="icon" type="image/jpg" href="CU-Logo.jpg">
 </head>
 
 <body>
@@ -28,12 +30,19 @@
 
   <main class="generalContainer">
     <section class="services">
-      <div class="servicesSearchContainer">
-        <input type="text" id="searchInput" placeholder="Search For Student Services..."> <!--takes input, will work with the search algo in js file-->
+
+      <div class="logoContainer">
+      <center>
+              <img src="CU-Logo.jpg" alt="CU Logo" width="700">
+      </center>
       </div>
 
       <div class="introBlurb">
         <p>At Carleton, students have access to a wide range of support services that are here to help throughout their university experience. Whether you are looking for academic support, financial resources, Wellness services, career guidance, or opportunities to get involved, this space helps you explore what is available and connect with the services that best support your success.</p>
+      </div>
+
+      <div class="servicesSearchContainer">
+        <input type="text" id="searchInput" placeholder="Search For Student Services..."> <!--takes input, will work with the search algo in js file-->
       </div>
 
       <div class="servicesDropdown"> <!--all services and sub services are under the dropdown-->
@@ -59,8 +68,9 @@
           <a href="CDAC.html">Carleton Disability Awareness Center (CDAC)</a>
           <a href="GRSC.html">Gender & Sexuality Resource Center</a>
           <a href="Mawandoseg.html">Mawandoseg</a>
-          <a href="RISE.html">Racialized & International Student Experience (RISE)A</a>
+          <a href="RISE.html">Racialized & International Student Experience (RISE)</a>
           <a href="Wellness-Centre.html">Wellness Center</a>
+          <a href="Women.html">Womens Centre</a>
           <a href="HDP.html">Health and Dental Plan</a>
           <a href="Legal-Clinic.html">Legal Clinic</a>
           <a href="AC.html">Advocacy Clickline</a>
@@ -104,7 +114,9 @@
 <!--will add more dropdowns once the list of services is final-->
     </section>
 
+
     <aside class="mapBox">
+      <h3>Campus Services Map</h3>
         <div class="mapEmbed" id="map"></div>
       <script src="map.js"></script>
 
@@ -118,7 +130,7 @@
 </main>
 
   <footer>
-    <p>Carleton University Student Services</p>
+    <p>© 2026 Carleton University</p>
   </footer>
 
   <script src="scriptHomePage.js"></script>
