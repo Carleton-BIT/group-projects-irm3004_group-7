@@ -105,20 +105,22 @@ function addToLayer(item,obj){
 function addRemove(obj, ID){
 
 
- if (obj[1] === 1){
-     obj[0].addTo(map);
-     obj[1] = 0;
-     document.getElementById(ID).style.backgroundColor = "rgba(192,192,192,1)";
- }else{
-     obj[0].remove();
-     obj[1] = 1;
-     document.getElementById(ID).style.backgroundColor = "rgba(255,255,255,1)";
- }
-   map.on('click', function(e) {
-       console.log(e.latlng.lat, e.latlng.lng);
-   });
+    if (obj[1] === 1){
+        obj[0].addTo(map);
+        obj[1] = 0;
+        document.getElementById(ID).style.backgroundColor = document.getElementById(ID).dataset.origColor;
+    }else{
+        obj[0].remove();
+        obj[1] = 1;
+        document.getElementById(ID).dataset.origColor = document.getElementById(ID).style.backgroundColor;
+        document.getElementById(ID).style.backgroundColor = "rgba(192,192,192,1)";
+    }
+      map.on('click', function(e) {
+          console.log(e.latlng.lat, e.latlng.lng);       });
+
 
 
 }
+
 
 
