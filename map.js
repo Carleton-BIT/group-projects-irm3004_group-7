@@ -9,9 +9,9 @@ map.fitBounds(bounds);
 //Academics
 let first_layer;
 const layer_1 = [first_layer];
-a = generateObject("object_1", 185, 290, "Academic Advising Center",layer_1,'red');
+a = generateObject("object_1", 185, 290, "Academic Advising Center <br> Location: Tory Building ",layer_1,'red');
 b = generateObject("object_2", 120, 255, "Center for Student Academic Support <br> Location: Fourth floor of MacOdrum Library ",layer_1, 'red');
-c = generateObject("object_3", 400, 410, "Ombuds Services <br> Location: Room 511B of the university center  ",layer_1,'red');
+c = generateObject("object_3", 400, 410, "Ombuds Services <br> Location: Room 511B of the Carleton Technology & Training Center  ",layer_1,'red');
 d = generateObject("object_4", 227, 275, "Science Student Success Center <br> Location: Herzberg Building   ",layer_1,'red');
 generateLayer(layer_1);
 addToLayer(a,layer_1);
@@ -25,7 +25,7 @@ let second_layer;
 const layer_2 = [second_layer];
 
 
-x = generateObject("object_5", 200, 350, "Carleton Disability Awareness Center (CDAC) <br> Room 424 <br><br> Gender & Sexuality Resource Center <br> Room 427 <br><br> Mawandoseg <br> Room 426 <br><br> Racialized & International Student Experience <br> Room 423 <br><br> Wellness Center <br> Room 403 <br><br> Health and Dental Plan <br> Room 401 <br><br> Legal Clinic <br> Room 401 <br><br> Unified Support Centre <br> Location: First Floor  <br><br> Breakfast Club <br> First Floor <br><br> Advocacy Clickline <br> Room 401  ",layer_2);
+x = generateObject("object_5", 200, 350, "Carleton Disability Awareness Center (CDAC) <br> Room 424 <br><br> Gender & Sexuality Resource Center <br> Room 427 <br><br> Mawandoseg <br> Room 426 <br><br> Racialized & International Student Experience <br> Room 423 <br><br> Wellness Center <br> Room 403 <br><br> Health and Dental Plan <br> Room 401 <br><br> Legal Clinic <br> Room 401 <br><br> Unified Support Centre <br> Location: First Floor  <br><br> Breakfast Club <br> First Floor <br><br> Advocacy Clickline <br> Room 401 <br> Location: Nideyinàn ",layer_2);
 generateLayer(layer_2);
 addToLayer(x, layer_2);
 
@@ -35,8 +35,8 @@ let third_layer;
 const layer_3 = [third_layer];
 
 
-x = generateObject("object_6", 190, 350, "Spirituality Center <br> Room 426 <br><br> Wellness Desk <br> Fourth Floor Atrium <br><br> Student Care Support Team <br> Room 430 <br><br> Sexual Assault Support Center <br> Room 424 ",layer_3,'gold');
-y = generateObject("object_7", 400, 420, "Health and Counselling Services <br> Room 2600",layer_3,'gold');
+x = generateObject("object_6", 190, 350, "Spirituality Center <br> Room 426 <br><br> Wellness Desk <br> Fourth Floor Atrium <br><br> Student Care Support Team <br> Room 430 <br><br> Sexual Assault Support Center <br> Room 424 <br> Location:Nideyinàn",layer_3,'gold');
+y = generateObject("object_7", 400, 420, "Health and Counselling Services <br> Location: Carleton Technology & Training Center Room 2600",layer_3,'gold');
 z = generateObject("object_8", 380, 540, "Carleton Athletics", layer_3,'gold');
 generateLayer(layer_3);
 addToLayer(x, layer_3);
@@ -49,8 +49,8 @@ let fourth_layer;
 const layer_4 = [fourth_layer];
 
 
-x = generateObject("object_9", 370, 350, "Awards and Financial Aid <br> Room 202 <br><br> Financial Services <br> Student Accounts <br> Room 301 <br><br> Controller's Office <br> Room 603 <br><br> Payroll & Accounts Payable <br> Room 607",layer_4,'violet');
-y = generateObject("object_10", 185, 300, "Student Emergency Fund (SEF) <br> Room 430 ",layer_4,'violet');
+x = generateObject("object_9", 370, 350, "Awards and Financial Aid <br> Room 202 <br><br> Financial Services <br> Student Accounts <br> Room 301 <br><br> Controller's Office <br> Room 603 <br><br> Payroll & Accounts Payable <br> Room 607 <br> Location: Pigiarvik ",layer_4,'violet');
+y = generateObject("object_10", 185, 300, "Student Emergency Fund (SEF) <br> Location: Tory Building Room 430 ",layer_4,'violet');
 generateLayer(layer_4);
 addToLayer(x, layer_4);
 addToLayer(y, layer_4);
@@ -61,9 +61,9 @@ let fifth_layer;
 const layer_5 = [fifth_layer];
 
 
-x = generateObject("object_11", 190, 300, "Career Services <br> Room 401 <br><br> Student Experience Office <br> Room 430",layer_5,'green');
-y = generateObject("object_12", 200, 340, "Paul Menton Centre <br> Room 501",layer_5,'green');
-z = generateObject("object_12", 120, 250, "GO-ISSO <br> MacOdrum Library 4th Floor",layer_5,'green');
+x = generateObject("object_11", 190, 300, "Career Services <br> Room 401 <br><br> Student Experience Office <br> Room 430 <br> Location: Tory Building ",layer_5,'green');
+y = generateObject("object_12", 200, 340, "Paul Menton Centre <br> Location: Nideyinàn Room 501",layer_5,'green');
+z = generateObject("object_12", 120, 250, "GO-ISSO <br> Location:MacOdrum Library 4th Floor",layer_5,'green');
 generateLayer(layer_5);
 addToLayer(x, layer_5);
 addToLayer(y, layer_5);
@@ -120,3 +120,5 @@ function addRemove(obj, ID){
 
 
 }
+
+
